@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="scss/reset.css">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+
+<body>
+    <form action="" method="post">
+        <h1>註冊帳號</h1>
+        <div class="input_area">
+            <div class="text">
+                <p>姓名</p>
+                <p class="required">必填</p>
+            </div>
+            <input type="text" placeholder="請輸入姓名">
+        </div>
+
+        <div class="input_area">
+            <div class="text">
+                <p>E-mail</p>
+                <p class="required">必填</p>
+            </div>
+            <input type="text" placeholder="請輸入E-mail">
+        </div>
+
+        <div class="input_area">
+            <div class="text">
+                <p>密碼</p>
+                <p class="required">必填</p>
+            </div>
+            <input type="text" placeholder="請輸入密碼">
+        </div>
+
+        <div class="input_area">
+            <div class="text">
+                <p>推薦人</p>
+                <p class="not_equired">非必填</p>
+            </div>
+            <input type="text" placeholder="請輸入推薦人">
+        </div>
+
+        <div class="qusetion">
+            <div class="qa">
+                <p>請選擇您的性別</p>
+                <p>
+                    <input type="radio" id="test1" name="radio-group" checked>
+                    <label for="test1">男性</label>
+                </p>
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="test2">女性</label>
+                </p>
+            </div>
+            <div class="qa">
+                <p>請選擇您感興趣的主題</p>
+                <label class="form-control">
+                    <input type="checkbox" name="checkbox" />程式語言
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="checkbox" />數位行銷
+                </label>
+                <label class="form-control">
+                    <input type="checkbox" name="checkbox" />投資理財
+                </label>
+            </div>
+        </div>
+
+        <div class="check">
+            <label class="form-control">
+                <input type="checkbox" name="checkbox" />我已同意註冊條款
+            </label>
+        </div>
+
+
+        <input type="submit" value="註冊帳號" class="submit_btn">
+
+    </form>
+</body>
+<script src="app.js"></script>
+
+</html>
