@@ -10,7 +10,7 @@ html, body {
           justify-content: center;
   background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABjElEQVQ4jWNgwAJSHc+wIPNFArSlsKkLfDqdC0PwfN8HMWyK90nOFcImjg3kd7/kIFYtKvjLhqIxbeIG/JZe6s7D9AKpgFtPl8nO/w4fjO+U1iKCTV1qXZdEQ+ojPmxyt1W/sjEwMDBs1PrCg9Oi9kfTJLCJr/2mg9VCOHDYFCeHVwEUuG3BbgFOUD+xnoeBgYGh+W4KyeE4x2MzmbGMBv6Eb+R4k5uLNVzxghDvD1LdS905GBgYGK4ys/EwMDAwTGS8jBIEP06mY038cGBUvEmEgYGBIV9BgGAQXF39WepKgQ7EpWfa5rCR7GQk4Bw/EXdkWS/TxzA8suOIDLrYB6kVhMMt9vkslGwUdtWZ6LyME2yVvCCALvb9lBiKl0xd72ItTLCCGG0pPWS+k3kJXxXfR4Hf72SZcOlZo/eEBUOwPFgM7r1lzDJMdzb8lGJgYGBIydLGcDHZ4KVKNZPyBC8U26807cGahO7ONUf4TPP3BZTMfuLrD5yuytQxw/Aef/xP4sJUzZyPrLIRALAOYX2BFTEUAAAAAElFTkSuQmCC");
   width: 100%;
-  height: 100%;
+  padding: 20px 0;
 }
 
 form {
@@ -23,7 +23,6 @@ form {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 80vh;
   width: 36%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -45,8 +44,9 @@ form h1 {
 }
 
 form .input_area {
+  position: relative;
   width: 100%;
-  margin: 12px 0;
+  margin: 12px 0 16px 0;
 }
 
 form .input_area .text {
@@ -93,6 +93,15 @@ form .input_area input:focus {
   outline: #3c5fa13f 4px solid;
 }
 
+form .input_area .warm {
+  position: absolute;
+  color: #993955;
+  font-size: 12px;
+  margin-top: 12px;
+  display: none;
+  bottom: -20px;
+}
+
 form .qusetion {
   width: 100%;
   display: -webkit-box;
@@ -112,15 +121,15 @@ form .qusetion .qa p {
 }
 
 form .qusetion .qa:first-child {
-  -webkit-box-flex: 4.5;
-      -ms-flex: 4.5;
-          flex: 4.5;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 form .qusetion .qa:nth-child(2) {
-  -webkit-box-flex: 5.5;
-      -ms-flex: 5.5;
-          flex: 5.5;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
 }
 
 form .check {
@@ -150,6 +159,10 @@ form .submit_btn {
   color: #FFF;
 }
 
+.red {
+  border: solid #993955 2px !important;
+}
+
 .form-control {
   font-family: system-ui, sans-serif;
   font-weight: bold;
@@ -176,8 +189,6 @@ input[type="checkbox"] {
   color: currentColor;
   width: 1.15em;
   height: 1.15em;
-  border: 0.15em solid currentColor;
-  border-radius: 0.15em;
   -webkit-transform: translateY(-0.075em);
           transform: translateY(-0.075em);
   display: -ms-grid;

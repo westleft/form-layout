@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UI Design | Form Layout</title>
     <link rel="stylesheet" href="scss/reset.css">
     <link rel="stylesheet" href="scss/style.css">
 </head>
@@ -26,7 +26,8 @@
                 <p>E-mail</p>
                 <p class="required">必填</p>
             </div>
-            <input type="text" placeholder="請輸入E-mail">
+            <input type="text" placeholder="請輸入E-mail" class="email_input">
+            <p class="warm">請輸入正確格式的E-mail</p>
         </div>
 
         <div class="input_area">
@@ -34,7 +35,8 @@
                 <p>密碼</p>
                 <p class="required">必填</p>
             </div>
-            <input type="text" placeholder="請輸入密碼">
+            <input type="password" placeholder="請輸入密碼" class="password_input">
+            <p class="warm">請輸入8個以上的字元</p>
         </div>
 
         <div class="input_area">
@@ -58,7 +60,7 @@
                 </p>
             </div>
             <div class="qa">
-                <p>請選擇您感興趣的主題</p>
+                <p>請選擇感興趣的主題</p>
                 <label class="form-control">
                     <input type="checkbox" name="checkbox" />程式語言
                 </label>
@@ -70,16 +72,12 @@
                 </label>
             </div>
         </div>
-
         <div class="check">
             <label class="form-control">
                 <input type="checkbox" name="checkbox" />我已同意註冊條款
             </label>
         </div>
-
-
         <input type="submit" value="註冊帳號" class="submit_btn">
-
     </form>
 </body>
 <script src="app.js"></script>
