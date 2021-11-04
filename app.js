@@ -18,7 +18,7 @@ function check(condition, num, item) {
         warm_text[num].style.display = 'flex';
         item.classList.add('red');
     } else {
-        warm_text[num].style.display = 'flex';
-        item.remove.add('red');
+        warm_text[num].style.display = 'none';
+        item.classList.remove('red');
     }
 }
